@@ -1,13 +1,16 @@
 package com.swapnil.task.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.swapnil.task.MainActivity;
 import com.swapnil.task.R;
 import com.swapnil.task.api.ApiClient;
 import com.swapnil.task.api.ApiInterface;
@@ -142,9 +145,13 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 if (response.code() == 200) {
                     try {
                         JSONObject jsonObject = new JSONObject(response.body().string());
-                        if (response.body() != null) {
+                        String status = jsonObject.optString(MyConstant.STATUS);
+                        String message = jsonObject.optString(MyConstant.MESSAGE);
+                        Toast.makeText(SignUpActivity.this, "" + message, Toast.LENGTH_SHORT).show();
+                        Intent ds = new Intent(SignUpActivity.this, MainActivity.class);
+                        startActivity(ds);
+                        finishAffinity();
 
-                        }
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -153,11 +160,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                         try {
                             JSONObject jsonObject = new JSONObject(response.errorBody().string());
                             if (response.errorBody() != null) {
-                              /*  String status = jsonObject.optString(MyConstants.STATUS);
-                                String message = jsonObject.optString(MyConstants.MESSAGE);
-                                if (status.equalsIgnoreCase("400")) {
-                                    Toast.makeText(SignUpActivity.this, "" + message, Toast.LENGTH_SHORT).show();
-                                }*/
+                                String status = jsonObject.optString(MyConstant.STATUS);
+                                String message = jsonObject.optString(MyConstant.MESSAGE);
+                                Toast.makeText(SignUpActivity.this, "" + message, Toast.LENGTH_SHORT).show();
+
                             }
                         } catch (Exception e) {
                             e.printStackTrace();
