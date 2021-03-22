@@ -22,6 +22,8 @@ public class MyConstant {
     public static final String MY_TOKEN = "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9lYzItMTgtMjI0LTMzLTIwOS51cy1lYXN0LTIuY29tcHV0ZS5hbWF6b25hd3MuY29tXC9hcGlcL3YxXC91c2VyIiwiaWF0IjoxNjE2MTU2NDY2LCJleHAiOjE2MTYxNjAwNjYsIm5iZiI6MTYxNjE1NjQ2NiwianRpIjoiQWRTMG5tcXJTb05SbkNHQSIsInN1YiI6Mzg4OSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.VmLns9zZpRx60AlIxRmmd4EAofU_T37HL8c5WAEh79w";
     public static final String FIRST_NAME = "first_name";
     public static final String USER_NAME = "username";
+    public static final String ENCODE_URL = "encode_image";
+    public static final String FILE_URL = "file_url";
 
 
     public final static boolean isValidEmail(String target) {

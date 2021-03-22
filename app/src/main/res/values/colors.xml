@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="lop">#9C27B0</color>
+    <color name="photo_click_sky">#007AE1</color>
+    <color name="pic_bag">#CBC9EF</color>
 </resources>

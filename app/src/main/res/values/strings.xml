@@ -9,4 +9,9 @@
     <string name="password_do_not">Password do not match</string>
     <string name="empty_pass_confirm">Confirm password</string>
     <string name="empty_role">Emapty role</string>
+    <string name="please_select_image">Please select image</string>
+    <string name="setProfilePic">Please set profile pic</string>
+    <string name="cropped">cropped</string>
+    <string name="croped_">cropped</string>
+    <string name="tmp_">tmp_</string>
 </resources>

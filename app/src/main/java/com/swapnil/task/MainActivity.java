@@ -134,9 +134,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             String message = jsonObject.optString(MyConstant.MESSAGE);
                             JSONObject jsonObject1 = jsonObject.optJSONObject("data");
                             String token = jsonObject1.optString(MyConstant.API_TOKEN);
+                            String first_name = jsonObject1.optString(MyConstant.FIRST_NAME);
+                            String last_name = jsonObject1.optString(MyConstant.LAST_NAME);
 
                             Intent getUserShown = new Intent(MainActivity.this, GetUserNameActivity.class);
                             getUserShown.putExtra("Token", token);
+                            getUserShown.putExtra("first_name", first_name);
+                            getUserShown.putExtra("last_name", last_name);
                             startActivity(getUserShown);
 
 

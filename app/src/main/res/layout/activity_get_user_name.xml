@@ -6,10 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".activity.GetUserNameActivity">
 
+    <Button
+        android:id="@+id/btn_logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_last_name"
+        android:layout_centerHorizontal="true"
+        android:text="LogOut" />
+
+    <Button
+        android:id="@+id/btn_uplode_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_last_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btn_logOut"
+        android:text="Uplode pic" />
+
+
+    <TextView
+        android:id="@+id/tv_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_show_name"
+        android:layout_toRightOf="@+id/title_last_name"
+        android:padding="20dp"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/title_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_show_name"
+        android:padding="20dp"
+        android:text="Last Name :-"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
     <TextView
         android:id="@+id/tv_show_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25sp"/>
+        android:layout_toRightOf="@+id/title_show_name"
+        android:padding="20dp"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/title_show_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="First Name :-"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_sign_up_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn_uplode_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="3dp" />
 
 </RelativeLayout>

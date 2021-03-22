@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_continue_phone_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rel_pic_grall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_border"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_add_pic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Add Profile Pic"
+                android:textAlignment="center"
+                android:textColor="#8f8f8f"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/vi_pic"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_add_pic"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvChooseFromGallery"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/vi_pic"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Select Photo"
+                android:textAlignment="center"
+                android:textColor="@color/photo_click_sky"
+                android:textSize="20dp" />
+
+            <View
+                android:id="@+id/vi"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvChooseFromGallery"
+                android:background="@color/colorPrimary" />
+
+
+            <TextView
+                android:id="@+id/tvTakePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/vi"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Take A Photo"
+                android:textAlignment="center"
+                android:textColor="@color/photo_click_sky"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_pic_grall"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/curverd_border_white_"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/photo_click_sky"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
